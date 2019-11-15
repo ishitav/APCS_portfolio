@@ -1,11 +1,13 @@
 import java.awt.EventQueue;
 
+
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 
 public class menuControl extends JFrame {
@@ -42,44 +44,62 @@ public class menuControl extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
-		JMenu mnFile = new JMenu("Midterm");
-		menuBar.add(mnFile);
+		JMenu Labs = new JMenu("Labs");
+		menuBar.add(Labs);
 		
-		JMenuItem mntmStartrestart = new JMenuItem("Start/Restart");
-		mnFile.add(mntmStartrestart);
+		JMenuItem ThreeWayPalindrome = new JMenuItem("Three Way Palindrome");
+		ThreeWayPalindrome.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				PalindromeDisplay frame = new PalindromeDisplay();
+				frame.setVisible(true);		
+				
+				frame.run();
+			}
+		});
+		Labs.add(ThreeWayPalindrome);
 		
-		JMenuItem mntmScore = new JMenuItem("Score");
-		mnFile.add(mntmScore);
+		JMenuItem Permutations = new JMenuItem("Permutations");
+		Permutations.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Permutations frame = new Permutations();
+				frame.setVisible(true);		
+				
+				frame.run();
+			}
+		});
+		Labs.add(Permutations);
 		
-		JMenu mnNewMenu_1 = new JMenu("New menu");
-		mnFile.add(mnNewMenu_1);
+		JMenu NewMiniLabs = new JMenu("New Mini Labs");
+		menuBar.add(NewMiniLabs);
 		
-		JMenu mnCalculator = new JMenu("Intro");
-		menuBar.add(mnCalculator);
+		JMenuItem UILab = new JMenuItem("FileIO Lab");
+		UILab.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ArrayList<String> al = new ArrayList();
+				al.add("hasVow");
+				al.add("begHasVow");
+				al.add("remove1st");
+				GUI guii = new GUI();
+				guii.gui(al);
+				//frame.setVisible(true);		
+				
+			}
+		});
+		NewMiniLabs.add(UILab);
 		
-		JMenu mnJumpers = new JMenu("Jumpers");
-		mnCalculator.add(mnJumpers);
+		JMenuItem ListLab = new JMenuItem("SearchAlgo Lab");
+		ListLab.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				algoMiniLab frame = new algoMiniLab();
+				//frame.setVisible(true);		
+				
+				algoMiniLab.run();
+			}
+		});
+		NewMiniLabs.add(ListLab);
 		
-		JMenuItem mntmOriginal = new JMenuItem("Original");
-		mnJumpers.add(mntmOriginal);
-		
-		JMenuItem mntmInputs = new JMenuItem("Inputs");
-		mnJumpers.add(mntmInputs);
-		
-		JMenuItem mntmNewMenuItem = new JMenuItem("Pythagorus");
-		mnCalculator.add(mntmNewMenuItem);
-		
-		JMenu mnNewMenu = new JMenu("Sprint 1");
-		menuBar.add(mnNewMenu);
-		
-		JMenuItem mntmShorthand = new JMenuItem("Shorthand");
-		mnNewMenu.add(mntmShorthand);
-		
-		JMenuItem mntmPalindrom = new JMenuItem("Palindrom 3");
-		mnNewMenu.add(mntmPalindrom);
-		
-		JMenu mnSprint = new JMenu("Sprint 2");
-		menuBar.add(mnSprint);
+		JMenu Calculator = new JMenu("Calculator");
+		menuBar.add(Calculator);
 		
 		JMenuItem mntmCalculator = new JMenuItem("Calculator");
 		mntmCalculator.addActionListener(new ActionListener() {
@@ -88,7 +108,7 @@ public class menuControl extends JFrame {
 				frame.setVisible(true);			
 			}
 		});
-		mnSprint.add(mntmCalculator);
+		Calculator.add(mntmCalculator);
 		
 	}
 	

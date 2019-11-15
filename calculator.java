@@ -140,6 +140,18 @@ public class calculator extends menuControl {
 		contentPane.add(calcArea);
 		
 		
+		//Adding zero button 
+		JButton button_0 = new JButton("0");
+		button_0.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				updateCalcArea(button_0.getText());
+			}
+
+		});
+		// Changed y-value of the zero button to land below the 2 
+		button_0.setBounds(163, 182, 41, 29);
+		contentPane.add(button_0);
+		
 		JButton button_1 = new JButton("1");
 		button_1.setBackground(new Color(0, 0, 255));
 		button_1.addActionListener(new ActionListener() {
@@ -250,6 +262,18 @@ public class calculator extends menuControl {
 		});
 		button_minus.setBounds(307, 112, 41, 29);
 		contentPane.add(button_minus);
+		
+		//Adding Multiply Operator
+		JButton button_multiply = new JButton("*");
+		button_multiply.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				saveValueOfArg1();
+				saveValueOfMathOp(OPERATOR.MULTIPLY);
+			}
+		});
+		
+		button_multiply.setBounds(307, 180, 41, 29);
+		contentPane.add(button_multiply);
 		
 		JButton button_equal = new JButton("=");
 		button_equal.addActionListener(new ActionListener() {
