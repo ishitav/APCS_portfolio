@@ -47,6 +47,16 @@ public class menuControl extends JFrame {
 		JMenu Labs = new JMenu("Labs");
 		menuBar.add(Labs);
 		
+	
+		JMenuItem test = new JMenuItem("AP Test Encapsulation");
+		test.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Test t = new Test();
+				t.setVisible(true);
+			}
+		});
+		Labs.add(test);
+		
 		JMenuItem ThreeWayPalindrome = new JMenuItem("Three Way Palindrome");
 		ThreeWayPalindrome.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
