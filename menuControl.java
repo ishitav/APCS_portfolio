@@ -1,7 +1,10 @@
+import java.awt.Container;
 import java.awt.EventQueue;
+import java.awt.Image;
 
-
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -41,13 +44,24 @@ public class menuControl extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		
+		
+		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
 		JMenu Labs = new JMenu("Labs");
 		menuBar.add(Labs);
 		
+		JLabel pic = new JLabel("");
+		Image i = new ImageIcon("IshitaCoverPic.png").getImage();
+		pic.setIcon(new ImageIcon(i));
+		pic.setBounds(300, 100, 10, 10);
+		
+		Container content = getContentPane();
 	
+		content.add(pic);
+		
+		
 		JMenuItem test = new JMenuItem("AP Test Encapsulation");
 		test.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
