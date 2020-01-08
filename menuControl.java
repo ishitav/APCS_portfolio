@@ -134,6 +134,21 @@ public class menuControl extends JFrame {
 		});
 		Calculator.add(mntmCalculator);
 		
+		JMenu LinkedList = new JMenu("Linked List");
+		menuBar.add(LinkedList);
+		
+		JMenuItem linkedListLab = new JMenuItem("Linked List Lab");
+		linkedListLab.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				linkedListLab lframe = new linkedListLab();
+				lframe.setVisible(true);		
+				lframe.run();
+				
+			}
+		});
+		
+		LinkedList.add(linkedListLab);
+		
 	}
 	
 }
