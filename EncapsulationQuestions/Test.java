@@ -1,3 +1,4 @@
+package EncapsulationQuestions;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,6 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
+
+import menuControl.menuControl;
 
 public class Test extends menuControl {
 	final long serialVersionUID = 1L;

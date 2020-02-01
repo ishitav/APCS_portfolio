@@ -1,3 +1,4 @@
+package miniLabs;
 import java.awt.EventQueue;
 
 

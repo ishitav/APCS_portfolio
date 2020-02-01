@@ -1,4 +1,7 @@
+package io;
 import javax.swing.JOptionPane;
+
+import miniLabs.MethodCode;
 
 public class PrintCode {
     public static void temporarycode(String method) {

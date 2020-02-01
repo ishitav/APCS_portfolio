@@ -1,3 +1,5 @@
+package miniLabs;
+
 /**
  * returns the code pertaining to clicked method
  *

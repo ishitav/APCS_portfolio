@@ -1,6 +1,9 @@
+package EncapsulationQuestions;
 
 
 import java.util.Random;
+
+import io.ConsoleMethods;
 
 /** 
  * Question class is intended to support asking question on test

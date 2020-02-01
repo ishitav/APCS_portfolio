@@ -1,3 +1,4 @@
+package miniLabs;
 /**
  *
  * 
@@ -5,6 +6,9 @@
  * @version 
  */ 
 import java.util.ArrayList;
+
+import menuControl.Menu;
+
 import java.util.*;
 import java.io.*;
 

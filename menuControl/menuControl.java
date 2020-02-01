@@ -1,3 +1,4 @@
+package menuControl;
 import java.awt.Container;
 import java.awt.EventQueue;
 import java.awt.Image;
@@ -8,6 +9,13 @@ import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+
+import EncapsulationQuestions.Test;
+import PalindromeThreeWays.PalindromeDisplay;
+import io.GUI;
+import miniLabs.Permutations;
+import miniLabs.algoMiniLab;
+import miniLabs.calculator;
 
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -133,6 +141,7 @@ public class menuControl extends JFrame {
 			}
 		});
 		Calculator.add(mntmCalculator);
+		
 		
 	}
 	

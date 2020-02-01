@@ -1,4 +1,7 @@
+package PalindromeThreeWays;
 import java.util.ArrayList;
+
+import console.ConsoleIO;
 
 public class PalindromeThreeWay {
 

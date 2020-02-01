@@ -1,8 +1,11 @@
+package PalindromeThreeWays;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+
+import menuControl.menuControl;
 
 public class PalindromeDisplay extends menuControl {
 

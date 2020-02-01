@@ -1,3 +1,4 @@
+package miniLabs;
 /**
  * Translates phrases into piglatin
  *

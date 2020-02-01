@@ -1,3 +1,4 @@
+package EncapsulationQuestions;
 
 /**
  * Keeps score
