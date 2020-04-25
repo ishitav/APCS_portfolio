@@ -29,6 +29,16 @@ public class ConsoleIO
     
     }  
   
+  public static void println(int[] a) {
+	  System.out.print("[");
+	  for (int element: a) {
+          System.out.print(element);
+          System.out.print(" ,");
+      }
+	  System.out.println("]");
+	  System.out.println();
+  }
+  
   public static void print(String s) {
    
       System.out.print(s); 
@@ -56,7 +66,8 @@ public class ConsoleIO
     }  
     
   public static void clearScreen(){
-     System.out.print('\u000C');
+	  System.out.print("\033[H\033[2J");  
+	    System.out.flush(); 
     }  
     
   public static void displayLine() {
